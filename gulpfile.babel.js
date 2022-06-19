@@ -47,7 +47,10 @@ task("startServer", () => {
   browserSync.init({
     files: [SITE_ROOT + "/**"],
     open: "local",
+	notify: false,
     port: 4000,
+	tunnel: true,
+	online: true,
     server: {
       baseDir: SITE_ROOT,
       serveStaticOptions: {

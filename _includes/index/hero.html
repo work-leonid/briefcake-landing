@@ -1,0 +1,58 @@
+  <section class="md:h-[92vh] py-20 text-white overflow-hidden">
+
+	<div class="max-w-7xl text-center md:text-left mx-auto px-5 place-items-center h-full grid md:grid-cols-2 xl:grid-cols-5 gap-16 lg:gap-32">
+
+	  <div class="xl:col-span-2">
+		<h1 class="mb-5 relative text-4xl lg:text-5xl overflow-hidden font-header  font-bold">
+		  Updates from your favourite 
+		  <br/>
+
+		  <div class="sources inset-x-0">
+			<div class="sources__container">
+			  <ul class="sources__list">
+				<li class="text-[#6B69F2] sources__list__item">websites</li>
+				<li class="text-[#EC6D72] sources__list__item">blogs</li>
+				<li class="text-[#ED74FD] sources__list__item">instagram profiles</li>
+				<li class="text-[#E44444] sources__list__item">youtube channels</li>
+				<li class="text-[#E87E01] sources__list__item">RSS feeds</li>
+				<li class="text-[#FBB604] sources__list__item">Atom feeds</li>
+			  </ul>
+			</div>
+		  </div>
+
+		  in one daily email
+		</h1>
+		<p class="mb-10 text-2xl">Stay informed without refreshing social media and your favorite sites</p>
+
+		{% include btn-cta.html %}
+
+		<div class="flex justify-center gap-2 text-sm">
+		  <span>No credit card required</span>
+		  <span>&bull;</span>
+		  <span>Cancel anytime</span>
+		</div>
+	  </div>
+
+	  <div class="hidden md:block xl:col-span-3 relative self-center">
+		  <div class="absolute md:-inset-x-8 top-4"> 
+			<svg viewBox="0 0 666 566" fill="none" class="-translate-y-1/4" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.3" d="M22 130L313.766 239.424C319.924 241.734 326.7 241.802 332.903 239.616L644 130" stroke="white" stroke-width="4" stroke-linecap="round"/> <path d="M2 156.345C2 133.58 16.2764 113.261 37.6929 105.543L314.693 5.72303C326.525 1.45914 339.475 1.45915 351.307 5.72303L628.307 105.543C649.724 113.261 664 133.58 664 156.345V510C664 539.823 639.823 564 610 564H56C26.1766 564 2 539.823 2 510V156.345Z" stroke="white" stroke-width="4"/> </svg>
+		  </div>
+
+		<div class="relative grid grid-cols-2 lg:grid-cols-3 gap-5">
+
+
+		  {% include index/hero-card.html title="Websites" color="6B69F2" %}
+		  {% include index/hero-card.html title="Blogs" color="EC6D72" %}
+		  {% include index/hero-card.html title="Instagram Profiles" color="A33FB0" %}
+		  {% include index/hero-card.html title="Youtube Channels" color="E44444" %}
+		  {% include index/hero-card.html title="RSS Feeds" color="E87E01" %}
+		  {% include index/hero-card.html title="Atom Feeds" color="FBB604" %}
+
+
+		</div>
+
+	  </div>
+
+	</div>
+  </section>
+

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="text-slate-700">
+
+  {% include navigation.html %}
+
+  <div class="text-center  text-white">
+	<div class="max-w-3xl mx-auto px-5 py-10 md:py-20">
+	  <img src="/assets/images/pricing.png" srcset="/assets/images/pricing@2x.png 2x" class="mx-auto mb-5" />
+	  <h1 class="font-bold mb-5 text-4xl md:text-6xl">Pricing</h1>
+	  <p class="text-2xl leading-relaxed mb-10">Make your first digest: get daily emails, use integrations, follow RSS feeds, but with a limit of 3 sources.</p>
+
+	  {% include btn-cta.html %}
+	</div>
+  </div>
+
+  <section class="bg-white md:py-20 rounded-[3em] max-w-7xl mx-auto md:px-20">
+
+	<h2 class="text-center font-bold text-4xl md:text-5xl mx-auto max-w-2xl mb-20">
+	  If you like it, then upgrade to Briefcake PRO for $25/year. <span class="text-rose-500">No pressure.</span>
+	</h2>
+
+	{% include pricing/features.html %}
+
+  </section>
+
+  <div class="py-32 space-y-16 text-white px-20 max-w-7xl mx-auto">
+	<h2 class="font-bold text-4xl md:text-5xl mb-20">Questions & Answers</h2>
+
+	<div>
+	  <h3 class="font-bold mb-3 text-4xl">Is it safe to enter my credit card details on a website?</h3>
+	  <p>Absolutely! We use <a href="https://www.paddle.com" class="text-purple-400">Paddle</a> service to accept payments and don't store any credit card related data in our database.</p>
+	</div>
+	<div>
+	  <h3 class="font-bold mb-3 text-4xl">Is it possible to cancel subscription?</h3>
+	  <p>You can cancel your subscription at any moment, unsubscripion link is available in a payment receipt.</p>
+	</div>
+  </div>
+
+  <div class="text-white">
+	{% include footer.html %}
+  </div>
+
+</div>

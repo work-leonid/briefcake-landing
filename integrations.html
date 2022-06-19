@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="text-slate-700">
+
+  {% include navigation.html %}
+
+  <div class="text-center  text-white">
+	<div class="max-w-3xl mx-auto px-5 py-10 md:py-20">
+	  <img src="/assets/images/integrations.png" srcset="/assets/images/integrations@2x.png 2x" class="mx-auto mb-5" />
+	  <h1 class="font-bold mb-5 text-4xl md:text-6xl">Integrations</h1>
+	  <p class="text-2xl leading-relaxed">Thanks to integrations and exports of ready-made rss feeds, you can quickly create your own personal digest.</p>
+	</div>
+  </div>
+
+  <div class="">
+	<section class="rounded-[3em] max-w-7xl mx-auto md:pr-20">
+
+	  <div class="md:flex gap-10 lg:gap-20">
+		<div>
+		  <div class="text-white sticky top-5 max-w-xl p-10 flex flex-col text-2xl gap-4">
+			<a href="#bookmarklet" class="hover:text-purple-400">Bookmarklet</a>
+			<a href="#extensions" class="hover:text-purple-400">Extensions</a>
+			<a href="#standard-formats" class="hover:text-purple-400">Import from standard formats</a>
+			<a href="#pocket" class="hover:text-purple-400">Pocket</a>
+		  </div>
+		</div>
+
+		<div class="max-w-4xl space-y-10 md:space-y-20 mx-auto">
+
+		  <div class="bg-white space-y-5 rounded-[2em] flex-1 p-10 lg:p-16">
+			{% include integrations/bookmarklet.html %}
+		  </div>
+		  <div class="bg-white rounded-[2em] flex-1 p-10 lg:p-16">
+			{% include integrations/extensions.html %}
+		  </div>
+		  <div class="bg-white rounded-[2em] flex-1 p-10 lg:p-16">
+			{% include integrations/standard-formats.html %}
+		  </div>
+		  <div class="bg-white rounded-[2em] flex-1 p-10 lg:p-16">
+			{% include integrations/pocket.html %}
+		  </div>
+
+		  <div class="text-center px-10 text-2xl py-32 rounded-[2em] bg-white">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 mb-5 stroke-slate-400 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"> <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /> </svg>
+			<p class="max-w-xl mx-auto">If you're missing any other integrations, <a href="#" class="text-purple-500">write to us</a>.</p>
+		  </div>
+		</div>
+
+	  </div>
+	</section>
+  </div>
+
+  <div class="text-white">
+	{% include footer.html %}
+  </div>
+
+</div>

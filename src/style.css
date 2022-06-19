@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#3B399F];
+}
+
+
+.sources {
+  top: 50%;
+  left: 0%;
+}
+
+.sources__container {
+  overflow: hidden;
+  height: 50px;
+}
+
+.sources__container:after, 
+.sources__container:before {
+  position: absolute;
+  top: 0;
+}
+
+.sources__list {
+  animation: switch 12s infinite ease-in-out;
+}
+
+.sources__list__item {
+  line-height: 60px;
+}
+
+@keyframes switch {
+  0%, 100% {
+    transform: translateY(0%);
+  }
+  16% {
+    transform: translateY(-66px);
+  }
+  32% {
+    transform: translateY(-130px);
+  }
+  48% {
+    transform: translateY(-188px);
+  }
+  64% {
+    transform: translateY(-240px);
+  }
+  80% {
+    transform: translateY(-310px);
+  }
+}
+
+.cursor {
+ animation: cursor 5s infinite ease-in-out;
+ animation-direction: alternate;
+}
+
+@keyframes cursor {
+  0% {
+	transform: translateY(0%)
+  }
+  50% {
+	transform: translateY(20%);
+  }
+  100% {
+	transform: translateX(-10%)
+  }
+}
+
+.search {
+ animation: search 5s infinite ease-in-out;
+ animation-direction: alternate; 
+}
+
+@keyframes search {
+  0% {
+	transform: translate(-30%)
+  }
+  50% {
+	transform: translateX(35%);
+  }
+  100% {
+	transform: translateY(-74%);
+  }
+}
